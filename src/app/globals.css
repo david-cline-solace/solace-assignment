@@ -1,3 +1,40 @@
+@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  overflow-y:scroll; /* prevents page from changing width when searches are done, etc */
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.grid-header {
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: white;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.padded-divs>div {
+  padding:1rem;
+}
